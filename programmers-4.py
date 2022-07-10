@@ -5,7 +5,7 @@ cnt=1
 answer_s=""
 for cut in range(1,len(s)): 
     tmp=s[:cut]
-    for j in range(cut, len(s)+3, cut):     
+    for j in range(cut, len(s)+cnt, cut):     
         if tmp == s[j:j+cut]:
             cnt+=1
         else:
