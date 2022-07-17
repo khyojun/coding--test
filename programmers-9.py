@@ -9,21 +9,13 @@ def solution(rows, columns, queries):
             cnt+=1
         arr.append(col)
     
-    for i in range(len(queries)):
-        x1=queries[i][0]
-        y1=queries[i][1]
-        x2=queries[i][2]
-        y2=queries[i][3]
-             
+    for x1,y1,x2,y2 in queries:
         x_move=x2-x1
-        y_move=y2-y1
-            
+        y_move=y2-y1 
         start_x=x1-1
         start_y=y1-1
-            
         end_x=x2-1
         end_y=y2-1
-            
         now_x=start_x
         now_y=start_y
         tmp=arr[start_x][start_y]
