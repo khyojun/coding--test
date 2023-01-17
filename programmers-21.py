@@ -1,4 +1,4 @@
-def solution(n):
+def solution(n): # 3진법 뒤집기
     answer = 0
     three=[]
     while True:
